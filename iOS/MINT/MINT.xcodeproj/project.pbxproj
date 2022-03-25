@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F170C8B27EB086400D0DE54 /* MainPlanetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F170C8A27EB086400D0DE54 /* MainPlanetCell.swift */; };
 		2F39EBAE27E9561800162856 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EBAD27E9561800162856 /* AppDelegate.swift */; };
 		2F39EBB027E9561800162856 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EBAF27E9561800162856 /* SceneDelegate.swift */; };
-		2F39EBB227E9561800162856 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EBB127E9561800162856 /* ViewController.swift */; };
 		2F39EBB527E9561800162856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBB327E9561800162856 /* Main.storyboard */; };
 		2F39EBB727E9561D00162856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBB627E9561D00162856 /* Assets.xcassets */; };
 		2F39EBBA27E9561D00162856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBB827E9561D00162856 /* LaunchScreen.storyboard */; };
 		2F39EBC527E9561D00162856 /* MINTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EBC427E9561D00162856 /* MINTTests.swift */; };
 		2F39EBCF27E9561D00162856 /* MINTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EBCE27E9561D00162856 /* MINTUITests.swift */; };
 		2F39EBD127E9561D00162856 /* MINTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EBD027E9561D00162856 /* MINTUITestsLaunchTests.swift */; };
+		2F39EBDE27E98B3E00162856 /* LogoAndIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBDD27E98B3E00162856 /* LogoAndIcons.xcassets */; };
+		2F39EBE127E98D5900162856 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBE027E98D5800162856 /* Colors.xcassets */; };
+		2F39EBE327E98E2100162856 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EBE227E98E2100162856 /* MainViewController.swift */; };
+		2F39EBE627E98F5700162856 /* ColorchipExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EBE527E98F5700162856 /* ColorchipExtension.swift */; };
+		2F39EBEA27E993F700162856 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EBE927E993F700162856 /* FontExtension.swift */; };
+		2F39EBEB27E995BE00162856 /* RubikOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBE827E993E600162856 /* RubikOne-Regular.ttf */; };
+		2F39EBED27E99AE600162856 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EBEC27E99AE600162856 /* MainTabbarController.swift */; };
+		2F39EBEF27E99CBD00162856 /* Planet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBEE27E99CBD00162856 /* Planet.storyboard */; };
+		2F39EBF127E99D0800162856 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBF027E99D0800162856 /* Profile.storyboard */; };
+		2F39EBF427E9A2C400162856 /* ProfileMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39EBF327E9A2C400162856 /* ProfileMainViewController.swift */; };
+		2F39EBF827E9B06100162856 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBF727E9B06100162856 /* Cart.storyboard */; };
+		2F39EBFE27E9B5D300162856 /* planet_kepler_22b.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBF927E9B5D200162856 /* planet_kepler_22b.json */; };
+		2F39EBFF27E9B5D300162856 /* planet_kepler_1649c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBFA27E9B5D300162856 /* planet_kepler_1649c.json */; };
+		2F39EC0027E9B5D300162856 /* planet_proxima_b.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBFB27E9B5D300162856 /* planet_proxima_b.json */; };
+		2F39EC0127E9B5D300162856 /* planet_teegarden_b.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBFC27E9B5D300162856 /* planet_teegarden_b.json */; };
+		2F39EC0227E9B5D300162856 /* planet_ross_128b.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F39EBFD27E9B5D300162856 /* planet_ross_128b.json */; };
 		712E154D3CB665290B2E704E /* Pods_MINT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1571BE4F446275A2E3115F /* Pods_MINT.framework */; };
 		B69337734F76D9B61EF8084E /* Pods_MINT_MINTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03381986DF13D5FE3C5819C4 /* Pods_MINT_MINTUITests.framework */; };
 		BABDD16161EADA4BD32A13BA /* Pods_MINTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF673CF9AF166AFB78063B82 /* Pods_MINTTests.framework */; };
@@ -40,10 +56,10 @@
 
 /* Begin PBXFileReference section */
 		03381986DF13D5FE3C5819C4 /* Pods_MINT_MINTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINT_MINTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F170C8A27EB086400D0DE54 /* MainPlanetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPlanetCell.swift; sourceTree = "<group>"; };
 		2F39EBAA27E9561800162856 /* MINT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MINT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F39EBAD27E9561800162856 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F39EBAF27E9561800162856 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2F39EBB127E9561800162856 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F39EBB427E9561800162856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F39EBB627E9561D00162856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F39EBB927E9561D00162856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +69,22 @@
 		2F39EBCA27E9561D00162856 /* MINTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MINTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F39EBCE27E9561D00162856 /* MINTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MINTUITests.swift; sourceTree = "<group>"; };
 		2F39EBD027E9561D00162856 /* MINTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MINTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2F39EBDD27E98B3E00162856 /* LogoAndIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LogoAndIcons.xcassets; sourceTree = "<group>"; };
+		2F39EBE027E98D5800162856 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2F39EBE227E98E2100162856 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2F39EBE527E98F5700162856 /* ColorchipExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorchipExtension.swift; sourceTree = "<group>"; };
+		2F39EBE827E993E600162856 /* RubikOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RubikOne-Regular.ttf"; sourceTree = "<group>"; };
+		2F39EBE927E993F700162856 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		2F39EBEC27E99AE600162856 /* MainTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		2F39EBEE27E99CBD00162856 /* Planet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Planet.storyboard; sourceTree = "<group>"; };
+		2F39EBF027E99D0800162856 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		2F39EBF327E9A2C400162856 /* ProfileMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainViewController.swift; sourceTree = "<group>"; };
+		2F39EBF727E9B06100162856 /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
+		2F39EBF927E9B5D200162856 /* planet_kepler_22b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planet_kepler_22b.json; sourceTree = "<group>"; };
+		2F39EBFA27E9B5D300162856 /* planet_kepler_1649c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planet_kepler_1649c.json; sourceTree = "<group>"; };
+		2F39EBFB27E9B5D300162856 /* planet_proxima_b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planet_proxima_b.json; sourceTree = "<group>"; };
+		2F39EBFC27E9B5D300162856 /* planet_teegarden_b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planet_teegarden_b.json; sourceTree = "<group>"; };
+		2F39EBFD27E9B5D300162856 /* planet_ross_128b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = planet_ross_128b.json; sourceTree = "<group>"; };
 		5B1571BE4F446275A2E3115F /* Pods_MINT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MINT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		619F88E47673FBD514892416 /* Pods-MINT-MINTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINT-MINTUITests.debug.xcconfig"; path = "Target Support Files/Pods-MINT-MINTUITests/Pods-MINT-MINTUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		632AF92BEC1BAD48D7D2D23C /* Pods-MINT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MINT.release.xcconfig"; path = "Target Support Files/Pods-MINT/Pods-MINT.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +143,6 @@
 				7463B92BD7EDD9823A1E1152 /* Pods-MINTTests.debug.xcconfig */,
 				78CD4B478CADF8F700F04321 /* Pods-MINTTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,13 +171,18 @@
 		2F39EBAC27E9561800162856 /* MINT */ = {
 			isa = PBXGroup;
 			children = (
+				2F39EBE427E98E3300162856 /* Main */,
+				2F39EBF227E9A2A500162856 /* Profile */,
 				2F39EBAD27E9561800162856 /* AppDelegate.swift */,
 				2F39EBAF27E9561800162856 /* SceneDelegate.swift */,
-				2F39EBB127E9561800162856 /* ViewController.swift */,
+				2F39EBEC27E99AE600162856 /* MainTabbarController.swift */,
 				2F39EBB327E9561800162856 /* Main.storyboard */,
-				2F39EBB627E9561D00162856 /* Assets.xcassets */,
+				2F39EBEE27E99CBD00162856 /* Planet.storyboard */,
+				2F39EBF727E9B06100162856 /* Cart.storyboard */,
+				2F39EBF027E99D0800162856 /* Profile.storyboard */,
 				2F39EBB827E9561D00162856 /* LaunchScreen.storyboard */,
 				2F39EBBB27E9561D00162856 /* Info.plist */,
+				2F39EBDF27E98B4500162856 /* Resources */,
 			);
 			path = MINT;
 			sourceTree = "<group>";
@@ -166,6 +202,73 @@
 				2F39EBD027E9561D00162856 /* MINTUITestsLaunchTests.swift */,
 			);
 			path = MINTUITests;
+			sourceTree = "<group>";
+		};
+		2F39EBDF27E98B4500162856 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F39EBF527E9A73B00162856 /* Planets */,
+				2F39EBE727E993CB00162856 /* Font */,
+				2F39EBB627E9561D00162856 /* Assets.xcassets */,
+				2F39EBDD27E98B3E00162856 /* LogoAndIcons.xcassets */,
+				2F39EBE027E98D5800162856 /* Colors.xcassets */,
+				2F39EBE527E98F5700162856 /* ColorchipExtension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2F39EBE427E98E3300162856 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2F39EBE227E98E2100162856 /* MainViewController.swift */,
+				2F39EC0327EAEBAD00162856 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2F39EBE727E993CB00162856 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				2F39EBE827E993E600162856 /* RubikOne-Regular.ttf */,
+				2F39EBE927E993F700162856 /* FontExtension.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		2F39EBF227E9A2A500162856 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2F39EBF327E9A2C400162856 /* ProfileMainViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2F39EBF527E9A73B00162856 /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				2F39EBF627E9A76000162856 /* Animations */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		2F39EBF627E9A76000162856 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				2F39EBF927E9B5D200162856 /* planet_kepler_22b.json */,
+				2F39EBFA27E9B5D300162856 /* planet_kepler_1649c.json */,
+				2F39EBFB27E9B5D300162856 /* planet_proxima_b.json */,
+				2F39EBFD27E9B5D300162856 /* planet_ross_128b.json */,
+				2F39EBFC27E9B5D300162856 /* planet_teegarden_b.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		2F39EC0327EAEBAD00162856 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F170C8A27EB086400D0DE54 /* MainPlanetCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +380,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F39EBE127E98D5900162856 /* Colors.xcassets in Resources */,
+				2F39EBFE27E9B5D300162856 /* planet_kepler_22b.json in Resources */,
+				2F39EBF827E9B06100162856 /* Cart.storyboard in Resources */,
+				2F39EC0227E9B5D300162856 /* planet_ross_128b.json in Resources */,
 				2F39EBBA27E9561D00162856 /* LaunchScreen.storyboard in Resources */,
+				2F39EBF127E99D0800162856 /* Profile.storyboard in Resources */,
+				2F39EC0027E9B5D300162856 /* planet_proxima_b.json in Resources */,
+				2F39EBEB27E995BE00162856 /* RubikOne-Regular.ttf in Resources */,
+				2F39EC0127E9B5D300162856 /* planet_teegarden_b.json in Resources */,
 				2F39EBB727E9561D00162856 /* Assets.xcassets in Resources */,
+				2F39EBDE27E98B3E00162856 /* LogoAndIcons.xcassets in Resources */,
+				2F39EBFF27E9B5D300162856 /* planet_kepler_1649c.json in Resources */,
+				2F39EBEF27E99CBD00162856 /* Planet.storyboard in Resources */,
 				2F39EBB527E9561800162856 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,9 +521,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F39EBB227E9561800162856 /* ViewController.swift in Sources */,
+				2F170C8B27EB086400D0DE54 /* MainPlanetCell.swift in Sources */,
+				2F39EBED27E99AE600162856 /* MainTabbarController.swift in Sources */,
+				2F39EBEA27E993F700162856 /* FontExtension.swift in Sources */,
 				2F39EBAE27E9561800162856 /* AppDelegate.swift in Sources */,
+				2F39EBF427E9A2C400162856 /* ProfileMainViewController.swift in Sources */,
 				2F39EBB027E9561800162856 /* SceneDelegate.swift in Sources */,
+				2F39EBE327E98E2100162856 /* MainViewController.swift in Sources */,
+				2F39EBE627E98F5700162856 /* ColorchipExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +716,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -626,6 +746,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
