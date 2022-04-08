@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MAIN-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="MINT" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,11 +20,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="MAIN" image="tab_main" id="Lbs-9H-DXd"/>
+                    <navigationItem key="navigationItem" id="zKL-nV-zwT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1287" y="138"/>
+            <point key="canvasLocation" x="1922" y="138"/>
         </scene>
         <!--Profile-->
         <scene sceneID="awd-gC-i6D">
@@ -42,13 +42,14 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6hH-1t-yjz" customClass="MainTabbarController" customModule="MINT" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fR1-Su-L3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" name="main"/>
                         <color key="selectedImageTintColor" name="main"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xl3-Nq-3QU"/>
+                        <segue destination="bjf-vC-IeK" kind="relationship" relationship="viewControllers" id="xl3-Nq-3QU"/>
                         <segue destination="jKp-gQ-sqK" kind="relationship" relationship="viewControllers" id="e8k-4V-Uo6"/>
                         <segue destination="YAO-Id-iUG" kind="relationship" relationship="viewControllers" id="1As-67-KSR"/>
                     </connections>
@@ -67,9 +68,28 @@
             </objects>
             <point key="canvasLocation" x="247" y="629"/>
         </scene>
+        <!--MAIN-->
+        <scene sceneID="r5z-je-6he">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bjf-vC-IeK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="MAIN" image="tab_main" id="Lbs-9H-DXd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y0W-8v-NUW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DL5-oA-8Tc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDt-Vy-ymj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="138"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="tab_main" width="128" height="128"/>
+        <image name="tab_main" width="24" height="24"/>
         <namedColor name="main">
             <color red="0.24705882352941178" green="0.70588235294117652" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

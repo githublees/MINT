@@ -10,6 +10,9 @@ target 'MINT' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'Moya', '~> 15.0'
   pod 'lottie-ios'
+  pod 'web3swift'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Kingfisher', '~> 7.0'
 
   target 'MINTTests' do
     inherit! :search_paths

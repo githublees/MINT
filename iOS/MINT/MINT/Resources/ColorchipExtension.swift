@@ -13,4 +13,6 @@ extension UIColor {
     static let lightestMain = UIColor(named: "lightestMain")
     static let background = UIColor(named: "background")
     static let lightBackground = UIColor(named: "lightBackground")
+    static let pointRed = UIColor(named: "pointRed")
+    static let pointYellow = UIColor(named: "pointYellow")
 }
