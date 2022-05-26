@@ -9,56 +9,52 @@
 
 ### 💡 기술 스택
 #### FrontEnd
-<img alt="React" src ="https://img.shields.io/badge/React-61DAFB.svg?&style=for-the-badge&logo=react&logoColor=white"/>
-<img alt= "CSS" src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
+<img alt="React" src ="https://img.shields.io/badge/React-61DAFB.svg?&style=for-the-badge&logo=react&logoColor=white"/> <img alt= "CSS" src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
 <img alt="JavaScript" src ="https://img.shields.io/badge/JavaScript-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white"/>
 <img alt="Babel" src ="https://img.shields.io/badge/Babel-F9DC3E.svg?&style=for-the-badge&logo=Babel&logoColor=white"/>
 
 
 #### BackEnd
-<img alt="Spring Boot" src ="https://img.shields.io/badge/Spring Boot-6DB33F.svg?&style=for-the-badge&logo=Spring Boot&logoColor=white"/>
-<img alt="Gradle" src ="https://img.shields.io/badge/Gradle-02303A.svg?&style=for-the-badge&logo=Gradle&logoColor=white"/>
+<img alt="Spring Boot" src ="https://img.shields.io/badge/Spring Boot-6DB33F.svg?&style=for-the-badge&logo=Spring Boot&logoColor=white"/> <img alt="Gradle" src ="https://img.shields.io/badge/Gradle-02303A.svg?&style=for-the-badge&logo=Gradle&logoColor=white"/>
 <img alt="MySQL" src ="https://img.shields.io/badge/MySQL-4479A1.svg?&style=for-the-badge&logo=MySQL&logoColor=white"/>
 
 
 ### DevOps
-<img alt="Amazon AWS" src ="https://img.shields.io/badge/Amazon AWS-232F3E.svg?&style=for-the-badge&logo=Amazon AWS&logoColor=white"/>
-<img alt="Docker" src ="https://img.shields.io/badge/Docker-2496ED.svg?&style=for-the-badge&logo=Docker&logoColor=white"/>
+<img alt="Amazon AWS" src ="https://img.shields.io/badge/Amazon AWS-232F3E.svg?&style=for-the-badge&logo=Amazon AWS&logoColor=white"/> <img alt="Docker" src ="https://img.shields.io/badge/Docker-2496ED.svg?&style=for-the-badge&logo=Docker&logoColor=white"/>
 
 ### Co-tool
-<img alt="Jira" src ="https://img.shields.io/badge/Jira-0052CC.svg?&style=for-the-badge&logo=Jira&logoColor=white"/>
-<img alt="GitLab" src ="https://img.shields.io/badge/GitLab-FCA121.svg?&style=for-the-badge&logo=GitLab&logoColor=white"/>
+<img alt="Jira" src ="https://img.shields.io/badge/Jira-0052CC.svg?&style=for-the-badge&logo=Jira&logoColor=white"/> <img alt="GitLab" src ="https://img.shields.io/badge/GitLab-FCA121.svg?&style=for-the-badge&logo=GitLab&logoColor=white"/>
 
 ### 시스템 구성도
-![image](/uploads/8cce707a16b814f2c4cac8d360b984ed/image.png)
+![image](https://user-images.githubusercontent.com/45795169/170415288-73903ca7-afd0-4f87-953f-7e485b0fb201.png)
 
 ### 📌 주요 기능
 * **홈 화면**
   - ```행성 정보 제공 및 상세화면 연동``` <br>
-![녹화_2022_04_07_21_43_22_321_AdobeCreativeCloudExpress__1_](/uploads/90ab9e2de3211fb7e1774ef467ca00bd/녹화_2022_04_07_21_43_22_321_AdobeCreativeCloudExpress__1_.gif)
+![1_](https://user-images.githubusercontent.com/45795169/170415402-c868f6a8-de35-4ee0-8aa4-d63dbb9455c9.gif)
   - ```사이드 바 및 지갑 연결```<br>
-![ezgif.com-gif-maker](/uploads/ae4d409b504f8a67a7976e0a426a002b/ezgif.com-gif-maker.gif)
+![2_](https://user-images.githubusercontent.com/45795169/170415400-f8e7baf5-97d5-4d49-8b66-bea4656bcf61.gif)
   <br>
 
 * **상세 화면**
   - ```행성 지도를 확인 할 수 있으며 타일 선택을 통해 구매 가능```<br>
-![ezgif.com-gif-maker__1_](/uploads/d899ee8e448875993332415aeed5a52e/ezgif.com-gif-maker__1_.gif)
+![3_](https://user-images.githubusercontent.com/45795169/170415393-0b21c821-16fa-4153-a614-fbffabeff6b2.gif)
   <br>
 
   - ```장바구니 버튼을 통한 행성 담기 기능```<br>
-![image](/uploads/664fb149fcc9b38a8eb3e3a03b0e5961/image.png)
+![4_](https://user-images.githubusercontent.com/45795169/170415405-5cc03e22-fcaf-4381-92c8-f7122300c683.png)
 <br>
 
 * **관리자 페이지** <br>
 
   - ```거래 내역 확인 및 행성 별 토지 현황 확인```<br>
-![ezgif.com-gif-maker__2_](/uploads/8457552a25f9b0d727f9a84498f116d4/ezgif.com-gif-maker__2_.gif)
+![5_](https://user-images.githubusercontent.com/45795169/170415404-225502c8-342e-4bec-9cdb-8dc58464f119.gif)
 <br>
   
 * **프로젝트 설명 페이지**
 
   - ```프로젝트의 전반적인 설명```<br>
-![ezgif.com-gif-maker__3_](/uploads/949e1ec94ceaa16e8166bae434962ec6/ezgif.com-gif-maker__3_.gif)
+![6_](https://user-images.githubusercontent.com/45795169/170415403-cfe2f945-499d-4e4c-908b-ec85f2e99495.gif)
 <br>
 
 ### 🧑 팀원 소개
@@ -92,13 +88,13 @@
 </details>
 
 ### :penguin: 빌드 및 배포
-* [보러가기✔](https://lab.ssafy.com/s06-blockchain-nft-sub2/S06P22A106/-/blob/develop/exec/%EB%B9%8C%EB%93%9C%20%EB%B0%8F%20%EB%B0%B0%ED%8F%AC.md)
+* [보러가기✔](https://github.com/leeeegun/MINT/blob/release/exec/%EB%B9%8C%EB%93%9C%20%EB%B0%8F%20%EB%B0%B0%ED%8F%AC.md)
 
 ### :triangular_flag_on_post: 버전 정보
-* [보러가기✔](https://lab.ssafy.com/s06-blockchain-nft-sub2/S06P22A106/-/blob/develop/exec/%EB%B2%84%EC%A0%84%EC%A0%95%EB%B3%B4.md)
+* [보러가기✔](https://github.com/leeeegun/MINT/blob/release/exec/%EB%B2%84%EC%A0%84%EC%A0%95%EB%B3%B4.md)
 
 ### :beginner: DB 정보
-* [보러가기✔](https://lab.ssafy.com/s06-blockchain-nft-sub2/S06P22A106/-/blob/develop/exec/DB_%EC%A0%95%EB%B3%B4.md)
+* [보러가기✔](https://github.com/leeeegun/MINT/blob/release/exec/DB_%EC%A0%95%EB%B3%B4.md)
 
 ### :ticket: 외부 서비스
-* [보러가기✔](https://lab.ssafy.com/s06-blockchain-nft-sub2/S06P22A106/-/blob/develop/exec/%EC%99%B8%EB%B6%80%20%EC%84%9C%EB%B9%84%EC%8A%A4.md)
+* [보러가기✔](https://github.com/leeeegun/MINT/blob/release/exec/%EC%99%B8%EB%B6%80%20%EC%84%9C%EB%B9%84%EC%8A%A4.md)
