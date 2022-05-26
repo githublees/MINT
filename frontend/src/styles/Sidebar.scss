@@ -1,0 +1,55 @@
+@import "./_variables.scss";
+body{
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+.sidebar-skeleton{
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    bottom: 0;
+    width: 272px;
+    // z-index: -10000;
+}
+.sidebar{
+    font-family: 'Pretendard-Regular', sans-serif;
+    background: $point-main !important; 
+    .sidebar-icon{
+        margin-top: 8pt !important;
+    }
+    .sidebar-wallet{
+        position : absolute !important; 
+        bottom : 0 !important;
+    }
+    .menu {
+        cursor: pointer!important;
+        text-decoration: none!important;
+        color: #e4e4e4!important;
+      }
+}
+nav.sidebar.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T {
+    position: relative !important;
+    display: block !important;
+    line-height: 50px!important;
+    height: 50px !important;
+    white-space: nowrap !important;
+    text-decoration: none !important;
+    color: $font-light !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    background: $point-main !important;
+}
+nav.sidebar.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-.sidenav---highlighted---oUx9u > .sidenav---navitem---9uL5T {
+    cursor: default !important;
+    background: $point-dark !important;
+}
+nav.sidebar.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ-.sidenav---navitem---9uL5T.sidenav---navicon---3gCRo > *{
+    color: $font-light!important;
+    margin-top: 8pt !important; 
+}
+nav.sidebar.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f > *{
+    color: $font-light !important;
+    margin-top: 8pt !important; 
+} 
+nav.sidebar.sidebar-wallet sidenav---sidenav-navitem---uwIJ{
+    margin-bottom: 0px !important;
+}

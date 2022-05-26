@@ -1,0 +1,28 @@
+.login{
+    height: 100vh !important;
+    
+    .left_area{
+        width: 70%;
+        float: left;
+        height: 100vh !important;
+        box-sizing: border-box;
+        background-image: url('../../public/image/stars.png');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .logo_lottie{
+            display: flex;
+            align-items: center;
+            align-content: center;
+
+        }
+    }
+    .right_login{
+        width: 30%;
+        height: 100vh !important;
+        float: right;
+        background-color: white !important;
+        color: black;
+    }
+}

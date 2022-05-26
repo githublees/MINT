@@ -1,0 +1,185 @@
+@import "variables";
+
+.Description {
+    padding: 2rem;
+    position: relative;
+
+    .mint {
+        font-family: 'Rubik One' !important;
+        color: $point-main;
+
+        &__h2 {
+            font-size: 3rem;
+            margin-left: 0.25rem;
+            position: relative;
+            bottom: -0.25rem;
+        }
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+
+        .header {
+            &__subWrapper {
+                margin-left: 2rem;
+                padding-left: 2rem;
+                border-left: 1px solid rgb(108, 108, 108);
+            }
+
+            &__sub {
+                margin-bottom: 0;
+            }
+
+            &__meaning {
+                color: rgb(255, 255, 255);
+                font-size: 1.25rem;
+
+                strong {
+                    font-family: "Pretendard-Black";
+                    color: $point-main;
+                }
+            }
+
+            &__slogan {
+                color: $point-light;
+            }
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+    }
+
+    .quoteContent {
+        font-family: "Pretendard-Thin";
+        font-size: 2rem;
+        line-height: 2.5rem;
+
+        strong {
+            font-weight: normal;
+            font-family: "Pretendard-Bold";
+        }
+    }
+
+    h3 {
+        font-family: "Pretendard-Thin";
+        font-size: 2.5rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+        font-size: 0.875rem;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.477);
+        font-family: "Pretendard-Thin";
+    }
+
+
+
+    .quoteFrom {
+        color: rgb(167, 167, 167);
+        margin-top: 2rem;
+    }
+
+    .article {
+        margin-top: 3rem;
+
+        h2 {
+            font-size: 2.25rem;
+            font-family: "Pretendard-Bold";
+        }
+    }
+
+    .citesWrapper {
+        height: 70vh;
+        position: relative;
+    }
+
+    .cites {
+        position: absolute;
+        bottom: 0;
+
+        p {
+            color: rgb(185, 185, 185);
+        }
+
+        cite {
+            display: block;
+            font-style: normal;
+
+            a {
+                color: $bg-grey;
+            }
+        }
+    }
+    
+    .img {
+        width: 500px;
+        height: 400px;
+        box-shadow: 0 0 24px 24px $bg-dark inset;
+        border-radius: 50%;
+        padding: 1px;
+        background-clip: content-box;
+
+        background-repeat : no-repeat;
+        background-size : cover;
+
+        margin-bottom: 2rem;
+    }
+
+    .img-hawking {
+        background-image: url('https://www.thedailypost.kr/news/photo/201904/70078_60301_441.jpg');
+    }
+
+    .img-musk {
+        background-image: url('https://cdn.eyesmag.com/content/uploads/posts/2020/12/09/tesla-elon-musk-moves-to-texas-1-5b119051-2c23-449b-b554-7445558ebf62.jpg');
+    }
+
+    .img-collision {
+        background-image: url('https://imgnn.seoul.co.kr/img/upload/2019/04/30/SSI_20190430164134_V.jpg');
+    }
+
+    .img-starshot {
+        background-image: url('https://hashmm.com/content/images/2020/08/image-3.png');
+    }
+
+    .img-multiplanet {
+        background-image: url('https://hashmm.com/content/images/2020/08/image-2.png');
+    }
+
+    .img-Goldilocks {
+        background-image: url('https://w.namu.la/s/272eecdbb280929029de01f683a5cba47af99a0ee568439561517f1d7ddd57d159c147ea484265e41364b546ce9914aa44d3a4f9b1c3df44f82bc475ec0c3d701dd75d06560de69140917b637196531ec22954f5b63d0c2bd6b2491deed3c6a9');
+    }
+
+    .img-move {
+        background-image: url('https://img.insight.co.kr/static/2020/04/20/700/zw50b9b44qc3rj9cpe39.jpg');
+    }
+
+    .empty {
+        height: 300px;
+    }
+
+    .page {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .ending {
+        font-size: 1.125rem;
+
+        .ethereum {
+            height: 3rem;
+            margin: 3rem 0;
+        }
+    }
+    
+}
+

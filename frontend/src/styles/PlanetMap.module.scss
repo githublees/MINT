@@ -1,1 +1,503 @@
 @import "variables";
+
+// 비율 단위
+// $det: 110px;
+$det: 110px;
+$pur: 50px;
+
+
+// mixin
+@mixin mapSize ( $size ) {
+    height: calc(5 * $size);
+    min-height: calc(5 * $size);
+    width: calc(9 * $size);
+    min-width: calc(9 * $size);
+}
+
+@mixin block( $width, $height, $top, $left, $m ) {
+    width: calc($width * $m);
+    height: calc($height * $m);
+    position: absolute;
+    top: calc($top * $m);
+    left: calc($left * $m);
+}
+
+@mixin land( $len, $m ) {
+    width: calc($len * $m);
+    height: calc($len * $m);
+}
+
+@mixin blockTopLeft {
+    border-top-left-radius: 32px;
+}
+
+@mixin blockTopRight {
+    border-top-right-radius: 32px;
+}
+
+@mixin blockBottomLeft {
+    border-bottom-left-radius: 32px;
+}
+
+@mixin blockBottomRight {
+    border-bottom-right-radius: 32px;
+}
+
+
+// planet mixin
+@mixin KepC( $m ) {
+    // 구역
+    // $width, $height, $top, $left
+
+    .KepC-A {
+        @include block(4, 3, 0, 0, $m);
+    }
+
+    .KepC-B {
+        @include block(2, 3, 0, 4, $m);
+    }
+
+    .KepC-C {
+        @include block(3, 3, 0, 6, $m);
+    }
+
+    .KepC-D {
+        @include block(5, 2, 3, 0, $m);
+    }
+
+    .KepC-E {
+        @include block(4, 2, 3, 5, $m);
+    }
+
+
+    // 타일 크기 & 모서리
+    .KepC-A-001 {
+        @include blockTopLeft;
+    }
+
+    .KepC-B-001 {
+        @include land(2, $m);
+    }
+
+    .KepC-C-001 {
+        @include land(3, $m);
+        @include blockTopRight;
+    }
+
+    .KepC-D-001 {
+        @include land(2, $m);
+        @include blockBottomLeft;
+    }
+
+    .KepC-D-002 {
+        @include land(2, $m);
+    }
+
+    .KepC-E-001 {
+        @include land(2, $m);
+    }
+
+    .KepC-E-005 {
+        @include blockBottomRight;
+    }
+    
+}
+
+@mixin TG ( $m ) {
+    // 구역
+    // $width, $height, $top, $left
+
+    .TG-A {
+        @include block(2, 5, 0, 0, $m);
+    }
+
+    .TG-B {
+        @include block(3, 2, 0, 2, $m);
+    }
+
+    .TG-C {
+        @include block(4, 2, 0, 5, $m);
+    }
+
+    .TG-D {
+        @include block(2, 3, 2, 2, $m);
+    }
+
+    .TG-E {
+        @include block(2, 3, 2, 4, $m);
+    }
+
+    .TG-F {
+        @include block(3, 3, 2, 6, $m);
+    }
+
+
+    // 타일 크기 & 모서리
+    .TG-A-001 {
+        @include blockTopLeft;
+        @include land(2, $m);
+    }
+
+    .TG-A-006 {
+        @include blockBottomLeft;
+    }
+
+    .TG-C-001 {
+        @include land(2, $m);
+    }
+
+    .TG-C-003 {
+        @include blockTopRight;
+    }
+
+    .TG-D-003 {
+        @include land(2, $m);
+    }
+
+    .TG-E-001 {
+        @include land(2, $m);
+    }
+
+    .TG-F-001 {
+        @include land(3, $m);
+        @include blockBottomRight;
+    }
+}
+
+@mixin PrxB ( $m ) {
+    // 구역
+    // $width, $height, $top, $left
+
+    .PrxB-A {
+        @include block(3, 3, 0, 0, $m);
+    }
+
+    .PrxB-B {
+        @include block(2, 3, 0, 3, $m);
+    }
+
+    .PrxB-C {
+        @include block(4, 2, 0, 5, $m);
+    }
+
+    .PrxB-D {
+        @include block(1, 2, 3, 0, $m);
+    }
+
+    .PrxB-E {
+        @include block(4, 2, 3, 1, $m);
+    }
+
+    .PrxB-F {
+        @include block(2, 3, 2, 5, $m);
+    }
+
+    .PrxB-G {
+        @include block(2, 3, 2, 7, $m);
+    }
+
+
+    // 타일 크기 & 모서리
+    .PrxB-A-001 {
+        @include blockTopLeft;
+    }
+
+    .PrxB-B-001 {
+        @include land(2, $m);
+    }
+
+    .PrxB-C-004 {
+        @include blockTopRight;
+    }
+    
+    .PrxB-D-002 {
+        @include blockBottomLeft;
+    }
+
+    .PrxB-E-001 {
+        @include land(2, $m);
+    }
+
+    .PrxB-E-002 {
+        @include land(2, $m);
+    }
+
+    .PrxB-F-001 {
+        @include land(2, $m);
+    }
+
+    .PrxB-G-003 {
+        @include land(2, $m);
+        @include blockBottomRight;
+    }
+}
+
+@mixin RB ( $m ) {
+    // 구역
+    // $width, $height, $top, $left
+
+    .RB-A {
+        @include block(1, 2, 0, 0, $m);
+    }
+
+    .RB-B {
+        @include block(2, 2, 0, 1, $m);
+    }
+
+    .RB-C {
+        @include block(4, 2, 0, 3, $m);
+    }
+
+    .RB-D {
+        @include block(2, 2, 0, 7, $m);
+    }
+
+    .RB-E {
+        @include block(3, 3, 2, 0, $m);
+    }
+
+    .RB-F {
+        @include block(2, 3, 2, 3, $m);
+    }
+
+    .RB-G {
+        @include block(2, 3, 2, 5, $m);
+    }
+
+    .RB-H {
+        @include block(2, 3, 2, 7, $m);
+    }
+
+
+    // 타일 크기 & 모서리
+    .RB-A-001 {
+        @include blockTopLeft;
+    }
+
+    .RB-B-001 {
+        @include land(2, $m);
+    }
+
+    .RB-D-001 {
+        @include land(2, $m);
+        @include blockTopRight;
+    }
+
+    .RB-E-001 {
+        @include land(3, $m);
+        @include blockBottomLeft;
+    }
+
+    .RB-F-003 {
+        @include land(2, $m);
+    }
+
+    .RB-G-001 {
+        @include land(2, $m);
+    }
+
+    .RB-H-006 {
+        @include blockBottomRight;
+    }
+}
+
+@mixin KepB ( $m ) {
+    // 구역
+    // $width, $height, $top, $left
+
+    .KepB-A {
+        @include block(9, 1, 0, 0, $m);
+    }
+
+    .KepB-B {
+        @include block(1, 2, 1, 0, $m);
+    }
+
+    .KepB-C {
+        @include block(2, 2, 1, 1, $m);
+    }
+
+    .KepB-D {
+        @include block(2, 2, 3, 0, $m);
+    }
+
+    .KepB-E {
+        @include block(1, 2, 3, 2, $m);
+    }
+
+    .KepB-F {
+        @include block(2, 4, 1, 3, $m);
+    }
+
+    .KepB-G {
+        @include block(3, 3, 1, 5, $m);
+    }
+
+    .KepB-H {
+        @include block(1, 3, 1, 8, $m);
+    }
+
+    .KepB-I {
+        @include block(4, 1, 4, 5, $m);
+    }
+
+
+    // 타일 크기 & 모서리
+    .KepB-A-001 {
+        @include blockTopLeft;
+    }
+
+    .KepB-A-009 {
+        @include blockTopRight;
+    }
+
+    .KepB-C-001 {
+        @include land(2, $m);
+    }
+
+    .KepB-D-001 {
+        @include land(2, $m);
+        @include blockBottomLeft;
+    }
+
+    .KepB-F-005 {
+        @include land(2, $m);
+    }
+
+    .KepB-G-001 {
+        @include land(3, $m);
+    }
+
+    .KepB-I-004 {
+        @include blockBottomRight;
+    }
+}
+
+
+
+// style
+
+.PlanetMap {
+    // border: 0.5px solid white;
+    border-radius: 32px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding: 24px;
+    position: relative;
+
+    .planet2DMap {
+        width: 100%;
+        opacity: 0.5;
+    }
+
+    .planetMapGrid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .planetMapGridItem {
+        border: 0.5px solid white;
+        list-style-type: none;
+
+        float: left;
+
+        cursor: pointer;
+
+        &--selected {
+            background-color: #acf3d386;
+        }
+
+        .tileImg {
+            width: 100%;
+            height: 100%;
+
+            background-repeat : no-repeat;
+            background-size : cover;
+
+            opacity: 0.7;
+        }
+    }
+}
+
+.PlanetMap.detail,
+.PlanetMap.admin {
+    @include mapSize( $det );
+    margin-top: 3rem;
+
+    .planetMapGridItem {
+        height: $det;
+        width: $det;
+    }
+}
+
+.PlanetMap.purchase {
+    @include mapSize( $pur );
+    margin-top: 1.5rem;
+
+    .planetMapGridItem {
+        height: $pur;
+        width: $pur;
+    }
+}
+
+.PlanetMap.admin {
+    .planetMapGridItem--sold {
+        background-color: #e3282854;
+    }
+}
+
+
+// kepler_1649c
+.PlanetMap.detail .planetMapGrid.KepC,
+.PlanetMap.admin .planetMapGrid.KepC {
+    @include KepC( $det );
+}
+
+.PlanetMap.purchase .planetMapGrid.KepC {
+    @include KepC( $pur );
+}
+
+
+// teegarden
+.PlanetMap.detail .planetMapGrid.TG,
+.PlanetMap.admin .planetMapGrid.TG {
+    @include TG( $det );
+}
+
+.PlanetMap.purchase .planetMapGrid.TG {
+    @include TG( $pur );
+}
+
+
+// Proxima_B
+.PlanetMap.detail .planetMapGrid.PrxB,
+.PlanetMap.admin .planetMapGrid.PrxB {
+    @include PrxB( $det );
+}
+
+.PlanetMap.purchase .planetMapGrid.PrxB {
+    @include PrxB( $pur );
+}
+
+// Ross_128b
+.PlanetMap.detail .planetMapGrid.RB,
+.PlanetMap.admin .planetMapGrid.RB {
+    @include RB( $det );
+}
+
+.PlanetMap.purchase .planetMapGrid.RB {
+    @include RB( $pur );
+}
+
+// Kepler_22b
+.PlanetMap.detail .planetMapGrid.KepB,
+.PlanetMap.admin .planetMapGrid.KepB {
+    @include KepB( $det );
+}
+
+.PlanetMap.purchase .planetMapGrid.KepB {
+    @include KepB( $pur );
+}

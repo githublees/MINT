@@ -1,0 +1,87 @@
+@import "variables";
+
+.MyPlanet {
+    padding: 3rem 6rem;
+    
+    .landImgO {
+        background-color: transparent !important;
+        border: 1px solid $point-main;
+        border-radius: 5px;
+    }
+}
+
+.myPlanetInfoWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 6rem;
+
+    .myPlanetWrapper {
+        margin-right: 6rem;
+    }
+
+    .myLandsWrapper {
+        padding-right: 1rem;
+    }
+
+    .myLands__inner {
+        height: 50vh;
+        width: 660px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0;
+    }
+
+    .myLands__inner::-webkit-scrollbar {      // t스크롤바 전체
+        width: 10px;
+    }
+
+    .myLands__inner::-webkit-scrollbar-thumb {        // 스크롤 막대
+        background-color: $point-main;
+        border-radius: 5px;
+    }
+
+    .myLands__inner::-webkit-scrollbar-track {        // 스크롤 막대 외부
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    .myLandItem {
+        margin-bottom: 1rem;
+        margin-left: 0.5rem;
+
+        .landItemSummary {
+            height: 5rem;
+            display: flex;
+            align-items: center;
+
+            font-family: "Pretendard-Black";
+            font-size: 1.25rem;
+            color: $point-main;
+
+            .landImg {
+                width: 3rem;
+                height: 3rem;
+                background-color: $point-light;
+                margin-right: 1.5rem;
+            }
+
+        }
+    }
+
+    .myLandItem details {
+        .arrowDown {
+            margin-left: 1rem;
+            fill: $point-main;
+
+            transform: rotate( -360deg );            
+            transition: transform 150ms ease;
+        }
+    }
+
+    .myLandItem details[open] {
+        .arrowDown {
+            transform: rotate( -180deg );            
+            transition: transform 150ms ease;
+        }
+    }
+}

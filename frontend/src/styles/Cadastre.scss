@@ -1,0 +1,50 @@
+@import "variables";
+.Cadastre{
+    .Cadastre-title{
+        margin-top: 10vh;
+        text-align: center;
+        font-family: "Pretendard-Black";
+        font-size: 3rem;
+        font-weight: bold;
+        color: $point-main;
+        text-shadow: 0.3rem 0.2rem 0px $font-light
+    }
+    .Cadastre-box-margin{
+        margin-left: 2vh;
+    }
+    .Cadastre-card-box{
+        // display: flex;
+        float: left;
+        margin-top: 10vh;
+        margin-left: 5vh;
+        border: 1px solid #69C7A2;
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 33vh;
+        height: 50vh;
+        cursor: pointer;
+    }
+    .Cadastre-lottie{
+        margin-top: 10vh;
+    }
+    .Cadastre-planet-name{
+        margin-top: 6vh;
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 3.2vh;
+        line-height: 36px;
+        text-align: center;
+        color: #69C7A2;
+    }
+    .Cadastre-planet-galaxy{
+
+        font-family: 'Pretendard';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1.8vh;
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+    }
+}

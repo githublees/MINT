@@ -3,6 +3,13 @@
 
 /* font import */
 @font-face {
+    font-family: 'Pretendard-Thin';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Pretendard-ExtraLight';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
     font-weight: 200;
@@ -37,18 +44,25 @@
     font-style: normal;
 }
 
+@import url(//db.onlinewebfonts.com/c/fb5493b4963f875c10be222e633c4aa3?family=Rubik+One);
+
 
 /* global style */
 
-* {
-    font-family: 'Pretendard-Light', sans-serif;
-    color: $font-light;
-    background-color: $bg-dark;
-}
+// {
+//     font-family: 'Pretendard-Regular', sans-serif;
+//     color: $font-light;
+//     background-color: $bg-dark;
+//     margin-left: 100px;
+// }
 
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Pretendard-Regular', sans-serif;
+    color: $font-light;
+    background-color: $bg-dark;
+    margin-left: 64px;
 }
 
 main > h1 {
@@ -71,10 +85,17 @@ button {
 .PlanetPage {
     display: flex;
     align-items: center;
-    margin-right: $sideBar-width;
+    padding-right: $sideBar-width;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
     
     main {
+        box-sizing: border-box;
         padding: 4rem;
+        width: 100%;
+        height: 100%;
+        position: relative;
     }
 }
 
@@ -89,9 +110,13 @@ button {
     right: 0;
     top: 0;
 
-    h1, h2, section, header, dl, dt, dd, div, img, span, p {
+    h1, h2, section, header, dl, dt, dd, div, img, span, p, svg {
         background-color: white;
         color: $point-sub;
+    }
+
+    .add-class {
+        background-color: transparent;
     }
 
     h1 {
@@ -105,6 +130,27 @@ button {
     header {
         border-bottom: 2px dashed $point-sub;
         height: 3.25rem;
+        position: relative;
+
+        svg {
+            fill: $point-main;
+            height: 1.5rem;
+            width: 1.5rem;
+
+            path {
+                stroke-width: 1.5rem;
+            }
+        }
+    }
+
+    .toggleDibsOnLandBtn {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        right: 0.75rem;
+        top: 0.25rem;
     }
 
     h2 {
@@ -134,6 +180,7 @@ button {
 
     .eth {
         height: 2rem;
+        width: auto;
     }
 
     section {
@@ -148,26 +195,68 @@ button {
         }
     }
 
-    .btns {
+    .btns, .notice {
         position: absolute;
         bottom: 0;
+        width: 16rem;
+    }
 
-        // button {
-        //     width: 14rem;
-        //     height: 3rem;
-        //     margin: 0.5rem 0;
+    .btns {
+        p {
+            color: $bg-dark;
+            font-family: "Pretendard-Bold";
+        }
 
-        //     border-radius: 1.5rem;
-        //     background-color: $point-main;
-        //     border: none;
-        // }
+        &__title {
+            color: $point-main;
+            font-family: "Pretendard-Black";
+            margin-bottom: 0.5rem;
+        }
 
+        &__priceInput {
+            border: 1px solid $point-main;
+            border-radius: 5px;
+            height: 2rem;
+            width: 14rem;
+            margin-bottom: 1rem;
+        }
+
+        .btns__alert, .btns__alert div {
+            color: $point-alert;
+            text-align: center;
+        }
+    }
+
+    .notice {
+        background-color: $bg-grey;
+        width: 16rem;
+        bottom: 1rem;
+        border-radius: 16px;
+        
+
+        p {
+            background-color: transparent;
+            color: $point-light;
+            margin: 0;
+        }
+
+        .notice__buyer {
+            margin-bottom: 2rem;
+            font-family: "Pretendard-Bold";
+            word-wrap: break-word;
+        }
     }
 
     div.image, img.image {
         width: 14rem;
         height: 14rem;
         background-color: $point-light;
+    }
+ 
+    img.imageO {
+        background-color: transparent;
+        border: 1px solid $point-main;
+        border-radius: 5px;
     }
     
     .info {
@@ -177,18 +266,21 @@ button {
     }
 
     .cartList {
-        border-bottom: 2px dashed $point-main;
+        // border-bottom: 2px dashed $point-main;
         height: calc(100vh - 18rem);
         overflow-x: hidden;
         overflow-y: scroll;
+        padding: 0 1rem;
+        margin-top: 1rem;
 
 
         .cartItem {
+            cursor: pointer;
             background-color: $bg-grey;
             border-radius: 16px;
             display: flex;
             margin-bottom: 0.75rem;
-            padding: 1.5rem 1rem;
+            padding: 1rem 1.5rem 1rem 0.5rem;
             position: relative;
 
             .planetImg {
@@ -206,26 +298,41 @@ button {
         .cartItem.cartItem--selected {
             background-color: $point-sub;
 
-                img, div, p, span, h2 {
-                    color: white;
+            img, div, p, span, h2 {
+                color: white;
+            }
+
+            .deleteBtn {
+                path {
+                    fill: white;
                 }
+            }
         }
 
         .itemInfo {
             margin-left: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
 
             p, h2 {
                 margin: 0;
             }
 
             .planetName {
-                font-size: 0.875rem;
+                font-size: 0.75rem;
                 margin-bottom: 0.125rem;
             }
 
             .landId {
-                font-size: 1.25rem;
+                font-size: 1rem;
                 margin-bottom: 0.25rem;
+            }
+
+            .itemPrice {
+                position: relative;
+                left: -8px;
             }
 
         }
@@ -242,6 +349,7 @@ button {
 
         .eth {
             height: 1.5rem;
+            width: auto;
         }
 
         .deleteBtn {
@@ -278,11 +386,18 @@ button {
 
     .cartList::-webkit-scrollbar-track {        // 스크롤 막대 외부
         background-color: rgb(233, 233, 233);
+        border-radius: 4px;
     }
     
 }
 
 // PurchaseBtnSection
+
+.PurchaseBtnSectionWrapper {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px dashed $point-main;
+}
 
 .PurchaseBtnSection {
     display: flex;
@@ -314,29 +429,67 @@ button {
     
     }
 
+    .price__fullLength {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 0.5rem;
+        border-radius: 5px;
+        display: none;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .priceWrapper:hover {
+        .price__fullLength {
+            display: block;
+        }
+    }
+
     .eth {
         height: 2rem;
+        width: auto;
     }
 
-    .btns {
-        margin-top: 0.5rem;
-
-        button {
-            width: 14rem;
-            height: 3rem;
-            margin: 0.5rem 0;
-
-            border-radius: 1.5rem;
-            background-color: $point-main;
-            border: none;
-        }
-
-    }
+    
 }
 
+.btns {
+    margin-top: 0.5rem;
 
+    button {
+        width: 14rem;
+        height: 3rem;
+        margin: 0.5rem 0;
+
+        border-radius: 1.5rem;
+        background-color: $point-main;
+        border: none;
+
+        color: white;
+        font-size: 1.125rem;
+    }
+
+    .btn--disabled {
+        background-color: grey;
+    }
+
+}
+
+.SideBarCart__metadataWrapper {
+    width: 100%;
+    margin-top: 1.5rem;
+}
 
 .metadata {
+    margin: 0;
+
+    &__description {
+        font-family: "Pretendard-ExtraLight";
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        color: $point-main;
+    }
+
     div {
         margin-bottom: 0.25rem;
     }
@@ -355,8 +508,11 @@ button {
     dd {
         display: inline-block;
         margin-left: 0.5rem;
+        margin-bottom: 0;
 
         word-break: break-all;
+
+        font-family: "Pretendard-Bold";
     }
 }
 
@@ -366,6 +522,7 @@ button {
 
     .eth {
         height: 2rem;
+        width: auto;
     }
 
     span.priceText {

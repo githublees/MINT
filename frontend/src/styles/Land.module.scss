@@ -1,125 +1,159 @@
-@import "variables";
+@import 'variables';
 
 .Land {
-    header {
-        display: flex;
-        align-items: center;
+  header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
 
-        h2 {
-            font-family: 'Pretendard-Black';
-            font-size: 1.5rem;
-            color: $point-main;
-        }
+    h2 {
+      font-family: 'Pretendard-Black';
+      font-size: 1.5rem;
+      color: $point-main;
     }
+  }
 
-    .metadata {
-        margin-bottom: 0;
+  .metadata {
+    margin-bottom: 0;
 
-        dd, sup {
-            font-family: 'Pretendard-Black';
-        }
+    dd,
+    sup {
+      font-family: 'Pretendard-Black';
     }
+  }
 
-    .metadata > div {
-        margin-bottom: 0.5rem;
-    }
+  .metadata > div {
+    margin-bottom: 0.5rem;
+  }
 
-    span.priceText {
-        font-size: 1rem;
-    }
-
+  span.priceText {
+    font-size: 1rem;
+  }
 }
 
 .landImgWrapper {
-    .landImgBig {
-        width: 128px;
-        height: 128px;
-    }
+  width: 128px;
+  .landImgBig {
+    width: 128px;
+    height: 128px;
+  }
 }
 
-
+.filebox label {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  width: 128px;
+  margin-top: 2vh;
+  color: $point-main;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid $point-main;
+  box-sizing: border-box;
+  border-radius: 77px;
+}
+.filebox input[type='file'] {
+  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 .landImg {
-    width: 64px;
-    height: 64px;
-    background-color: $point-light;
-    margin-right: 1.5rem;
+  width: 64px;
+  height: 64px;
+  background-color: $point-light;
+  margin-right: 1rem;
+}
+
+.landImgO {
+  background-color: transparent;
+  border: 1px solid $point-main;
+  border-radius: 5px;
 }
 
 .purchaseHistory {
-    width: 26rem;
+  width: 26rem;
 
-    summary {
-        cursor: pointer;
-        outline: none;
-        list-style: none;
-        color: $point-main;
-        margin: 1rem 0 1.5rem 0;
+  summary {
+    cursor: pointer;
+    outline: none;
+    list-style: none;
+    color: $point-main;
+    margin: 1rem 0 1.5rem 0;
 
-        display: flex;
-        align-items: center;
-    }
+    display: flex;
+    align-items: center;
+  }
 
-    summary::-webkit-details-marker {
-        display: none;
-    }
+  summary::-webkit-details-marker {
+    display: none;
+  }
 
-    .arrowDown {
-        margin-left: 1rem;
-        fill: $point-main;
+  .arrowDown {
+    margin-left: 1rem;
+    fill: $point-main;
 
-        transform: rotate( -360deg );            
-        transition: transform 150ms ease;
-    }
+    transform: rotate(-360deg);
+    transition: transform 150ms ease;
+  }
 }
 
 .purchaseHistory[open] {
-    .arrowDown {
-        transform: rotate( -180deg );            
-        transition: transform 150ms ease;
-    }
+  .arrowDown {
+    transform: rotate(-180deg);
+    transition: transform 150ms ease;
+  }
 }
 
 .historyItems {
-    padding-left: 6px;
-    margin: 0;
+  padding-left: 6px;
+  margin: 0;
 }
 
 .landImgUploadBtn {
-    width: 128px;
-    height: 36px;
-    border: 1px solid $point-main;
-    border-radius: 24px;
-    color: $point-main;
-    margin-top: 1rem;
+  width: 128px;
+  height: 36px;
+  border: 1px solid $point-main;
+  border-radius: 24px;
+  color: $point-main;
+  background-color: transparent;
+  margin-top: 1rem;
 }
 
 .landInMapBtn {
-    width: 16rem;
-    height: 2.5rem;
-    border-radius: 1.25rem;
-    border: none;
-    background-color: $point-main;
-    margin-top: 2.5rem;
+  width: 16rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  border: none;
+  background-color: $point-main;
+  color: white;
+  margin: 2rem 0;
 }
-
 
 // version
 .Land.card-mypage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .landInfoWrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    .landInfoWrapper {
-        display: flex;
-    }
+  }
 
-    .purchaseHistory {
-        margin-left: 4rem;
-    }
+  .purchaseHistory {
+    margin-left: 4rem;
+  }
 
-    .metadata {
-        margin-top: 0;
-        margin-left: 1.5rem;
-    }
+  .metadata {
+    margin-top: 0;
+    margin-left: 1.5rem;
+  }
 }

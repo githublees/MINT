@@ -102,7 +102,7 @@
         display: grid;
         max-width: 700px;
         box-sizing: border-box;
-        grid-template-columns: 1fr 3fr 3fr 1fr 0.3fr;
+        grid-template-columns: 1.5fr 3fr 3fr 1fr 0.3fr;
     }
 
     .purchaseGridLi {
@@ -115,10 +115,14 @@
         align-items: center;
 
         &__title {
-            font-family: "Pretendard-Black";
+            // font-family: "Pretendard-Black";
             font-size: 0.875rem;
             color: $point-main;
             margin-right: 0.5rem;
+        }
+
+        &__landId {
+            font-family: "Pretendard-Black";
         }
     }
 
@@ -154,6 +158,7 @@
         path {
             fill: $point-main;
             stroke-width: 0.75px;
+            stroke: white;
         }
     }
 
@@ -168,6 +173,24 @@
     .purchaseNotice p{
         color: #7A7A7A;
         font-size: 0.875rem;
+    }
+
+    .waiting, .done {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // margin-top: 80px;
+        height: 100%;
+
+        p {
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+
+    .done__notice {
+        margin-bottom: 2rem;
     }
 
 }

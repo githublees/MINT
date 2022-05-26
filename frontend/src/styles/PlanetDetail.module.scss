@@ -1,7 +1,9 @@
 @import "variables";
 
 .cartButton {
-    position: relative;
+    position: absolute;
+    right: 2rem;
+    bottom: 1.25rem;
     width: 4rem;
     height: 4rem;
     border-radius: 2rem;
@@ -24,5 +26,18 @@
 
         font-family: 'Pretendard-Black';
         font-size: 1.25rem;
+        color: white;
     }
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: white;
+    }
+}
+
+.planetInfoWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

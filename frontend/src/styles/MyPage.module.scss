@@ -1,0 +1,105 @@
+@import "variables";
+
+.MyPage {
+    padding: 3rem;
+
+    header {
+        span {
+            color: $point-main;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-family: "Pretendard-Black";
+            margin-bottom: 1.5rem;
+        }
+
+        .myWalletTitle {
+            color: rgb(142, 142, 142);
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .mypageHeader {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .ProfileEditBtn {
+        height: 2.5rem;
+        width: 10rem;
+        background-color: transparent;
+        border: 1px solid $point-main;
+        border-radius: 1.25rem;
+        color: $point-main;
+    }
+    
+    .MyPageInfo {
+        display: flex;
+        margin-top: 2.5rem;
+
+        h2 {
+            font-family: "Pretendard-Black";
+            color: $point-main;
+        }
+    }
+
+    .ProfileBox {
+        padding-right: 1rem;
+
+        &__item {
+            list-style-type: none;
+            margin: 1rem;
+            display: inline-block;
+            cursor: pointer;
+
+            p {
+                margin-bottom: 0;
+                text-align: center;
+            }
+
+            .planetName {
+                font-family: "Pretendard-Black";
+            }
+        }
+
+        .planetImg {
+            width: 8rem;
+        }
+    }
+
+    .ProfileBox__inner {
+        height: 50vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .ProfileBox__inner::-webkit-scrollbar {      // t스크롤바 전체
+        width: 10px;
+    }
+
+    .ProfileBox__inner::-webkit-scrollbar-thumb {        // 스크롤 막대
+        background-color: $point-main;
+        border-radius: 5px;
+    }
+
+    .ProfileBox__inner::-webkit-scrollbar-track {        // 스크롤 막대 외부
+        background-color: transparent;
+        border-radius: 5px;
+    }
+
+    .MyReceipts {
+        margin-right: 5rem;
+        width: 60%;
+        min-width: 600px;
+    }
+
+    .MyDibbedLands {
+        width: 30%;
+        min-width: 300px;
+    }
+}

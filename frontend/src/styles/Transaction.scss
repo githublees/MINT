@@ -1,0 +1,232 @@
+@import "variables";
+
+button.custom-input{
+    width: 20vh !important;
+    margin-left: 10px;
+}
+.transaction{
+    justify-content: center;
+    margin-top: 10vh;
+    width: 75%;
+    margin-left: 25vh;
+    .transaction-filter{
+        display: flex;
+        .transaction-filter-name,button.custom-input{
+            display: flex;
+            width: 15vh;
+            height: 4.5vh;
+            border: 1px solid $point-sub;
+            box-sizing: border-box;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.7rem;
+            color: $point-main;
+            background-color: $bg-dark;
+            cursor: pointer;
+        }
+        .transaction-filter-name-option{
+            text-align: center;
+        }
+    }
+    
+    .transaction-board{
+        border: 2px solid $point-sub;
+        box-sizing: border-box;
+        border-radius: 20px;
+        
+        .transaction-board-th{
+            background: $point-sub;
+            box-sizing: border-box;
+            width: 75%;
+            .transaction-board-head{
+                font-family: 'Pretendard';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 2vh;
+                line-height: 36px;
+                align-items: center;
+                text-align: center;
+
+                &.num{
+                    width: 7rem;
+                    border-radius: 18px 0px 0px 0px;
+                }
+                &.id{
+                    width: 40rem;
+                }
+                
+                &.money{
+                    width: 10rem;
+                }
+
+                &.title{
+                    width: 10rem;
+                }
+                
+                &.date{
+                    width: 15rem;
+                    border-radius: 0 18px 0 0;
+                }
+            }
+        }
+        .transaction-board-tbody{
+            display: block;
+            height: 75vh !important;
+            table-layout:fixed;
+            overflow-y: visible;
+            overflow-x: hidden;
+            width: 100%;
+
+            .transaction-board-tr{
+                border-bottom: 1px solid $point-light;
+                font-family: 'Pretendard';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.5vh;
+                line-height: 36px;
+                align-items: center;
+                text-align: center;
+                .transaction-board-body{
+                    &.number{
+                        width: 7rem;
+                    }
+                    &.tokenID{
+                        margin-left: 50px !important;
+                        text-align: left !important;
+                        margin-bottom: -1rem;
+                        font-weight: 600 !important;
+                        font-size: 1.7vh !important;
+                        color: $point-main;
+                    }
+                    
+                    &.adr{
+                        margin-left: 50px !important;
+                        text-align: left !important;
+                        padding-bottom: 0.2rem;
+                    }
+                    
+                    &.ETH{
+                        width: 10rem;
+                        text-align: left !important;
+                        
+                    }
+    
+                    &.planet{
+                        width: 10rem;
+                    }
+                    
+                    &.tradeDate{
+                        width: 13rem;
+                        border-radius: 0 18px 0 0;
+                    }
+                }
+            }
+        }
+        .transaction-board-tbody::-webkit-scrollbar {
+            width: 10px;
+        }
+        .transaction-board-tbody::-webkit-scrollbar-track {
+            background-color: #e4e4e4;
+            border-radius: 100px;
+            margin: 10px 0px 10px 0px;
+        }
+        .transaction-board-tbody::-webkit-scrollbar-thumb {
+            border-radius: 100px;
+            background-image: linear-gradient(180deg, $point-sub 0%, #708ad4 99%);
+            box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+          }
+          
+    }
+}
+.eth{
+    width: 50px;
+    height: auto;
+}
+thead, tbody tr {
+
+    display:table;
+
+    width:100%;
+
+    table-layout:fixed;/* even columns width , fix width of table too*/
+
+}
+.react-datepicker{
+    background-color: #434645 !important;
+    font-family: 'Pretendard' !important;
+    border: 2px solid $point-main !important;
+    padding: 10px;
+    
+    .react-datepicker__day{
+        color: $font-light;
+    }
+    .react-datepicker__day.react-datepicker__day--selected.react-datepicker__day--today{
+        border-radius: 36.3rem !important;
+        background-color: $point-main !important;
+        color: $font-light !important;
+    }
+    .react-datepicker__day--today{
+        color: $point-main;
+        font-weight: 900;
+        font-size: 0.9rem;
+
+    }
+    .react-datepicker__day--selected{
+        border-radius: 36.3rem !important;
+        background-color: $point-main !important;
+        color: $font-light !important;
+    }
+    .react-datepicker__day:hover{
+        border-radius: 36.3rem !important;
+        background-color: $point-light !important;
+        color: $font-light !important;
+    }
+    .react-datepicker__day.react-datepicker__day--keyboard-selected {
+        border-radius: 36.3rem !important;
+        background-color: $point-main !important;
+        color: $font-light !important;
+    }
+    .react-datepicker__header {
+        margin-top: 3px;
+        text-align: center;
+        background-color: #434645 !important;
+        border-bottom: 0px solid #aeaeae !important;
+        border-top-left-radius: 0.3rem;
+        // padding: 8px 0;
+        position: relative;
+
+    }
+    .react-datepicker__year-read-view--down-arrow, .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow, .react-datepicker__navigation-icon::before {
+        border-color:$font-light;
+        border-style: solid;
+        border-width: 3px 3px 0 0;
+        content: "";
+        display: block;
+        height: 9px;
+        position: absolute;
+        top: 13px;
+        width: 9px;
+        margin-top: 10px;
+    }
+    .react-datepicker__current-month{
+        color: $font-light;
+    }
+    .react-datepicker__day.react-datepicker__day--outside-month {
+        color: #BBBBBB;
+        display: inline-block;
+        width: 1.7rem;
+        line-height: 1.7rem;
+        text-align: center;
+        margin: 0.166rem;
+    }
+    .react-datepicker__day-name {
+        color: $font-light !important;
+    }
+    .react-datepicker__day-names {
+        margin-bottom: -15px;
+        margin-top: 10px;
+    }
+    
+
+}
